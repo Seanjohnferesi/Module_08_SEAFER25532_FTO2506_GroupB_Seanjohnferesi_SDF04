@@ -1,0 +1,135 @@
+body{
+    background-color: #659f8f;
+    font-family: 'Libre Baskerville', arial;
+    color: rgba(0, 0, 0, 0.65);
+    padding: 0 50px;
+}
+.email{
+    border: none;
+    padding: 11px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Libre Baskerville', arial;
+    color: rgb(54, 52, 52);
+    background-color: #f4f5f5;
+}
+
+.subscribe-button{
+    border: none;
+    padding: 11px 30px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Libre Baskerville', arial;
+    margin-left: 10px;
+    background-color: #d76d4a;
+    color: white;
+    cursor: pointer;
+}
+.divider{
+    border: 1px solid #d76d4ad3;
+    margin-top: 60px
+}
+
+img{
+    width: 230px;
+    margin-top: 40px;
+}
+
+footer{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 180px);
+}
+.newsletter{
+    grid-column: 1 / 3;
+}
+
+.footer-bottom{
+    grid-column: 1 / -1
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.575)
+}
+
+p{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.social-platforms{
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+/*iPad-Mini screen-size*/
+@media (max-width: 768px){
+    footer{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 130px 180px 180px;
+        column-gap: 50px;
+    }
+
+    .newsletter{
+        grid-column: 1 / -1;
+    }
+
+    .quick-links{
+        grid-column: 1 / 3;
+    }
+
+    .tech{
+        grid-column: 3 / -1;
+    }
+
+    .divider{
+        margin-top: 20px;
+    }
+}
+
+
+/*iPhone SE screen-size*/
+@media (max-width: 375px){
+    body{
+        padding: 0 50px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe-button{
+        border: none;
+        padding: 10px 90px;
+        border-radius: 7px;
+        font-size: 15px;
+        font-family: 'Libre Baskerville', arial;
+        margin-left: 0;
+        margin-top: 10px;
+        background-color: #d76d4a;
+        color: white;
+        cursor: pointer;  
+    }
+
+    .divider{
+        margin-top: 10px;
+    }
+
+    ul > li{
+        font-size: 14px
+    }
+}
