@@ -62,9 +62,25 @@ p{
 }
 
 .social-platforms{
-    border: 1px solid black;
-    height: 50px;
+  
+    height: 35px;
+    margin-top: 36px;
+    margin-left: 50px;
 }
+
+.social-images{
+    width: 35px;
+    height: 35px;
+    filter: brightness(50%) contrast(120%);
+    margin: 0 50px 0 0; 
+    cursor: pointer;
+}
+
+.branding{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /*iPad-Mini screen-size*/
 @media (max-width: 768px){
     footer{
@@ -89,6 +105,14 @@ p{
 
     .divider{
         margin-top: 20px;
+    }
+
+    .social-images{
+        margin-right: 25px
+    }
+    
+    .social-platforms{
+        margin-left: 25px;
     }
 }
 
@@ -129,5 +153,19 @@ p{
 
     ul > li{
         font-size: 14px
+    }
+
+    .branding{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social-images{
+        margin-right: 10px;
+    }
+
+    .social-platforms{
+        margin-top: 15px;
     }
 }
